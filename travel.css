@@ -506,3 +506,17 @@ form {
 { 
   .text {font-size: 11px} 
 } 
+
+@media (min-width:768px) {
+  .home-intro-heading,
+  .home-intro-sub-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width:1024px) {
+  .home-intro-heading,
+  .home-intro-sub-heading {
+    font-size: 65px;
+  }
+}
