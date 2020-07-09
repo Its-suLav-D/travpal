@@ -1,7 +1,7 @@
 
 
 const header = document.querySelector("header");
-const sectionOne = document.querySelector(".home-intro");
+const sectionOne = document.querySelector(".home-intro, .gallery-intro");
 const sliders = document.querySelectorAll(".slide-in");
 
 const sectionOneOptions = {
@@ -96,7 +96,7 @@ function showSlides()
 	let dots = document.getElementsByClassName("dot"); 
 
 	for (let i = 0; i < slides.length; i++) { 
-		slides[i].style.display = "none"; 
+		slides[i].style.display = "none";  
 	} 
 	slideIndex++; 
 	if (slideIndex > slides.length) 

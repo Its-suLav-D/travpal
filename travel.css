@@ -75,25 +75,53 @@ header {
   max-width: 100%;
   margin: 0 auto;
   object-fit: cover;
-  /* clip-path: polygon(100% 0%,100% 90%,50% 100%,0 90%,0 0); */
 }
-.home-intro-title {
+.gallery-intro {
+  background: url('image/walk.jpg');
+  padding:40vh 0;
+   background-size: cover; 
+  color:white;
+  text-align:center;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.33);
+}
+.register-intro {
+  background: url('image/air.jpg');
+  padding:55vh 0;
+   background-size: cover; 
+  color:white;
+  text-align:center;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.33);
+}
+.home-intro-title,.gallery-intro-title {
   width: 95%;
-  /* border: 1px solid salmon; */
   position:absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.home-intro-heading {
+.home-intro-heading, .gallery-intro-title{
   font-size: 80px;
   text-transform: uppercase;
+}
+.gallery-intro-title {
+  color: lightgoldenrodyellow;
+  letter-spacing: .5rem;
 }
 .home-intro-sub-heading {
   font-size:60px;
   margin: -0.5em;
   letter-spacing: .5rem;
-  
+}
+.fa-camera-retro {
+  color: rgba(226, 73, 73, 0.918)
 }
 .colored-heading {
   color: rgba(211, 45, 45, 0.74);
@@ -106,7 +134,7 @@ header {
 img {
     margin: 0 auto;
     width: 100%;
-    height: 600px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -244,12 +272,12 @@ img {
 }
 .real-10 {
   grid-row: 5/6;
-  grid-column: 3/5;
+  grid-column: 3/6;
 }
 
 .real-11 {
   grid-row: 4/6;
-  grid-column: 6/8;
+  grid-column: 6/9;
 }
 
 .real-12 {
@@ -268,17 +296,41 @@ img {
 }
 
 .real-15 {
-  grid-row: 6/7;
+  grid-row: 6/8;
   grid-column: 5/7;
 }
+/* Stone */
 .real-16 {
-  grid-row:7;
-  grid-column: 1/4;
+  grid-row:8;
+  grid-column: 5/7;
 }
+
 .real-17 {
   grid-row: 7;
-  grid-column: 6/9;
+  grid-column: 1/4;
 }
+/* ParaChute */
+.real-18 {
+  grid-row: 7;
+  grid-column: 4/5;
+}
+.real-19 {
+  grid-row: 8;
+  grid-column: 3/5;
+}
+.real-20 {
+  grid-row: 7;
+  grid-column: 7/9;
+}
+ .real-21 {
+  grid-row: 8;
+  grid-column: 7/9;
+}
+.real-23 {
+  grid-row:8;
+  grid-column:1/3;
+}
+
 .slider-image{
  object-fit: cover;
 }
@@ -518,5 +570,137 @@ form {
   .home-intro-heading,
   .home-intro-sub-heading {
     font-size: 65px;
+  }
+}
+
+/* Register */
+
+.register-container {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  width: 1000px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+  display: flex;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register-form {
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding: 40px;
+  flex:1;
+}
+.form-control {
+  margin:10px 0;
+  width:100%;
+}
+.register-label {
+  display: inline-block;
+  font-weight: bold;  
+}
+
+.register-input:not([type="checkbox"]) {
+  background-color: #dbdbdb;
+    border: 2px solid #97d160;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.checkbox-container a {
+  margin-left: auto;
+  color: #13161f;
+}
+
+.checkbox-container label {
+  color: #090e0e;
+  font-weight: normal;
+  margin-left: .5em;
+}
+
+.register-btn {
+  cursor: pointer;
+  background-color: #26a742d3;
+  border: 2px solid #49be8e;
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.register-sign {
+  color:rgb(28, 191, 231);
+  text-decoration:none;
+}
+.btn-ghost {
+  background-color:#ddd;
+  border-color: #ecf2ff;
+  color: #141c2c;
+}
+
+.btn img {
+  margin-right: 5px;
+  width: 20px;
+}
+
+.features {
+  flex: 1.5;
+  padding: 40px;
+}
+
+.feature {
+  position: relative;
+  padding-left: 30px;
+  margin: 40px 0;
+}
+
+.feature i {
+  color: #aaf1c2fb;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.feature h3 {
+  margin: 0;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 5px 0;
+  color:rgb(240, 240, 240);
+}
+
+@media(max-width: 768px) {
+  .register-container {
+      flex-direction: column;
+  }
+
+  .register-form {
+      border-right: 0;
   }
 }

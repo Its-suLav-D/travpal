@@ -3,229 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8570420209.js" crossorigin="anonymous"></script>
     <title>Register</title>
-
     <link rel="icon" href="../image/travelNepal.jpg" type="image/gif" sizes="32x32">
+    <link rel="stylesheet" href="../travel.css">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
       rel="stylesheet"
     />
-    
-    <style>
-        
-* {
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f7f8fc;
-    color: #141c2c;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-}
-
-a {
-    color: #2762eb;
-    text-decoration: none;
-}
-
-.container {
-    background-color: #fff;
-    border-radius: 3px;
-    border: 20px solid #dce7ff;
-    width: 1000px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
-    display: flex;
-}
-
-form {
-    border-right: 1px solid #ecf2ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    flex: 1;
-}
-
-.form-control {
-    margin: 10px 0;
-    width: 100%;
-}
-
-label {
-    display: inline-block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input:not([type="checkbox"]) {
-    background-color: transparent;
-    border: 2px solid #ecf2ff;
-    border-radius: 3px;
-    font-family: inherit;
-    font-size: 14px;
-    padding: 10px;
-    width: 100%;
-}
-
-.checkbox-container {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.checkbox-container a {
-    margin-left: auto;
-}
-
-.checkbox-container label {
-    color: #7a7e8c;
-    font-weight: normal;
-}
-
-.btn {
-    cursor: pointer;
-    background-color: #141c2c;
-    border: 2px solid #141c2c;
-    border-radius: 3px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 10px;
-    margin: 20px 0;
-    width: 100%;
-}
-
-.btn-ghost {
-    background-color: transparent;
-    border-color: #ecf2ff;
-    color: #141c2c;
-}
-
-.btn img {
-    margin-right: 5px;
-    width: 20px;
-}
-
-.features {
-    flex: 1.5;
-    padding: 40px;
-}
-
-.feature {
-    position: relative;
-    padding-left: 30px;
-    margin: 40px 0;
-}
-
-.feature i {
-    color: #2762eb;
-    position: absolute;
-    top: 5px;
-    left: 0;
-}
-
-.feature h3 {
-    margin: 0;
-}
-
-.feature p {
-    font-size: 14px;
-    line-height: 1.8;
-    margin: 5px 0;
-}
-
-@media(max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    form {
-        border-right: 0;
-    }
-}
-    </style>
+    <script src="https://kit.fontawesome.com/8570420209.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <header>
         <a href="#" class="site-logo" aria-label="homepage">TravPal</a>
         <nav class="main-nav"> 
           <ul class="nav-list">
             <li class="nav-list-item"><a href="../index.html" class="nav-link">Home</a></li>
-            <li class="nav-list-item"><a href="gallery/gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-list-item"><a href="../gallery/gallery.html" class="nav-link">Gallery</a></li>
             <li class="nav-list-item"><a href="#" class="nav-link">Register</a></li>
           </ul>
         </nav>
         </header>
 
         <section>
-            <div class="home-intro">
+            <div class="register-intro">
+                <div class="register-container">
+                    <form class="register-form">
+                        <button class="btn btn-ghost">
+                            <img src="/image/google.png" alt="Google">
+                             Sign in with Google
+                        </button>
+            
+                        <small>or</small>
+            
+                        <div class="form-control">
+                            <label for="email" class="register-label">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" class="register-input">
+                        </div>
+            
+                        <div class="form-control">
+                            <label for="password" class="register-label">Password</label>
+                            <input type="password" id="password" placeholder="Password" class="register-input">
+                        </div>
+            
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="remember" class="register-input">
+                            <label for="remember" class="register-label">Remember me</label>
+            
+                            <a href="#">Forgot Password</a>
+                        </div>
+            
+                        <button class="register-btn">Sign In</button>
+            
+                        <small>Don't have an account? <a href="#" class="register-sign">Sign up</a></small>
+                    </form>
+            
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <h3>Competitive Price</h3>
+                            <p>Our tours are all inclusive , have no hidden cost and Competitive price..</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-id-card"></i>
+                            <h3>Best Customer Service</h3>
+                            <p>Availabe to Answer all the question and supply infromation about holiday,travel arrangment 24/7.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hourglass-end"></i>
+                            <h3>12+ Years Experience</h3>
+                            <p>We have eperience, knowledge for more than 12 years that will make you come back for more.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form Div  -->
+              
             </div>
           </section>
-    <div class="container">
-        <form>
-            <button class="btn btn-ghost">
-                <img src="/image/google.png" alt="">
-                 Sign in with Google
-            </button>
 
-            <small>or</small>
-
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
+          <footer class="footer-container">
+            <div class="footer-item description">
+              <h4>TravPal</h4>
+              <p>TravPal is one of the leading travel agency.<br>The contents, pics and
+                designs of travpal.org are <br>protected by DMCA.
+              </p>
+                <form action="get">
+                  <h4>Newsletter</h4>
+                  <label for="newsletter" id="newsletter"> 
+                    <input type="email" placeholder="Your email address" id="newsletter" required>
+                  </label>
+                  <button class="btn">Sign Up</button>
+    
+                </form>
             </div>
-
-            <div class="form-control">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password">
+            <div class="footer-item post">
+              <h4 class="title-border">Places to Visit</h4>
+              <p class="latest-para">| Visit Chitwan</p>
+              <span id="current-date"></span><hr class="hr-line">
+    
+              <p class="latest-para">| Visit Rara lake</p>
+              <span id="current-date"></span><hr class="hr-line">
+              
             </div>
-
-            <div class="checkbox-container">
-                <input type="checkbox" id="remember">
-                <label for="remember">Remember me</label>
-
-                <a href="#">Forgot Password</a>
+            <div class="footer-item follow">
+              <h4 class="title-border">Get in Touch</h4>
+              <p class="follow-para"><i class="fas fa-location-arrow"></i><span id="follow-info">Kathmandu, Nepal</span></p>
+              <p class="follow-para"><i class="fas fa-phone"></i><span id="follow-info">+977-9841423791</span></p>
+              <p class="follow-para"><i class="fas fa-envelope-open-text"></i><span id="follow-info">travlpal@gmail.com</span></p>
+    
+              <div class="social-icons">
+                <div class="facebook social-item"><i class="fab fa-facebook fa-lg"></i></div>
+                <div class="insta social-item"><i class="fab fa-instagram fa-lg"></i></div>
+                <div class="twitter social-item"><i class="fab fa-twitter-square fa-lg"></i></div>
+                <div class="youtube social-item"><i class="fab fa-youtube fa-lg"></i></div>
+              </div>
             </div>
+          </footer>
+          <Script>
+              document.addEventListener('DOMContentLoaded', function() {
+	          let currDate = document.querySelectorAll('#current-date');
+	          currDate.forEach(item => {
+		      item.textContent =currentDate();
+	          })
+           });
 
-            <button class="btn">Sign In</button>
+    function currentDate() {
+	    let daysName=[
+            'Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday'
+        ];
 
-            <small>Don't have an account? <a href="#">Sign up</a></small>
-        </form>
-
-        <div class="features">
-            <div class="feature">
-                <i class="fas fa-code"></i>
-                <h3>Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                 sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-gift"></i>
-                <h3>Features</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor incididunt ut labore</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-edit"></i>
-                <h3>Updates</h3>
-                <p>A modern and clean design system for developing fast and powerful
-                    web interfaces.</p>
-            </div>
-        </div>
-    </div>
+	let months =[
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	]
+	let date =new Date();
+	let dayName = daysName[date.getDay()];
+	let monthName = months[date.getMonth()];
+	let year = date.getFullYear();
+	let fullDate = `${dayName}, ${date.getDate()} ${monthName} ${year}`;
+	return fullDate;
+}
+</Script>
+    
 </body>
 </html>
